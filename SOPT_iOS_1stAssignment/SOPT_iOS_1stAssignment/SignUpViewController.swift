@@ -32,7 +32,7 @@ class SignUpViewController: UIViewController {
         receiveViewController.pw = pwTextField.text
         //넘겨주기
         self.present(receiveViewController, animated: true, completion: {
-            self.navigationController?.popToRootViewController(animated: false)})
+            self.navigationController?.popViewController(animated: false)})
     }
     
     /*
