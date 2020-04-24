@@ -42,5 +42,5 @@ pwLabel.text = pw
 #### 로그아웃 클릭 시 첫 페이지로 가기
 👉회원가입 VC에서 다음 VC로 넘어갈 때 self를 pop 해주기
 <pre><code>self.present(receiveViewController, animated: true, completion: {
-self.navigationController?.popViewController(animated: false)
+self.navigationController?.popViewController(animated: false)})
 }</code></pre>
