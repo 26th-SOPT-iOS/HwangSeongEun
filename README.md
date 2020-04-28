@@ -15,8 +15,8 @@
 👉화면 넘어가는 버튼에 IBAction 연결하기   
    
 👉넘겨줄 페이지 지정 (identifier 사용)
-<pre><code>guard let receiveViewController = self.storyboard?.instantiateViewController(identifier: "loginViewController") as? LoginViewController else {return}
-</code></pre>
+'''swift guard let receiveViewController = self.storyboard?.instantiateViewController(identifier: "loginViewController") as? LoginViewController else {return}
+'''
 
 👉화면에서 데이터 받기
 <pre><code>receiveViewController.id = idTextField.text
