@@ -149,7 +149,6 @@
         <!--Login View Controller-->
         <scene sceneID="gix-Yl-5lF">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="JuV-PT-Mfk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="loginViewController" modalPresentationStyle="fullScreen" id="h5o-87-rbZ" customClass="LoginViewController" customModule="SOPT_iOS_1stAssignment" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gMi-Ln-Aaq">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -209,6 +208,7 @@
                         <outlet property="pwLabel" destination="qOI-Sw-7sn" id="3D9-lo-OYU"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JuV-PT-Mfk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1740.5797101449277" y="799.55357142857144"/>
         </scene>
