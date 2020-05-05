@@ -1,9 +1,3 @@
-# HwangSeongEun
-황성은
-   
-   
-**<WEEK 1> Assignment**
-***
 ### [과제1] Navigation 이용해서 View 전환
 스토리보드 이용
    
