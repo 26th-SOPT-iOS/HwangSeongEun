@@ -33,6 +33,11 @@ class SignUpViewController: UIViewController {
     }
 
 
-
+    @IBAction func transferView(_ sender: Any) {
+        guard let receiveViewController = self.storyboard?.instantiateViewController(identifier: "scrollViewController") as? ScrollViewController else {return}
+        
+        self.present(receiveViewController, animated: true, completion:{ self.navigationController?.popViewController(animated: false)
+        })
     
+    }
 }

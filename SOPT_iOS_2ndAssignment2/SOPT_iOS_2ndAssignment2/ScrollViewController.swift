@@ -9,21 +9,27 @@
 import UIKit
 
 class ScrollViewController: UIViewController {
-
+    @IBOutlet weak var navigationBar: UINavigationBar!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         
         //네비게이션바 투명망토
-        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
-        self.navigationController?.navigationBar.isTranslucent = true
-        self.navigationController?.view.backgroundColor = .clear
+        navigationBar.setBackgroundImage(UIImage(), for: .default)
+        
+//        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
+//        self.navigationController?.navigationBar.isTranslucent = true
+//        self.navigationController?.view.backgroundColor = .clear
         
         //back 화살표 하얗게
         self.navigationController?.navigationBar.tintColor = UIColor.white
     }
 
+    @IBAction func backView(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
     
     
     /*
