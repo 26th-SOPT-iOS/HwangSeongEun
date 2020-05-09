@@ -37,4 +37,7 @@ var answer = 0
         answerLabel.text = String(answer)
    }
 ```
+      
 
+   ***
+### [과제2] Zeplin 이용해서 로그인 화면 구현
