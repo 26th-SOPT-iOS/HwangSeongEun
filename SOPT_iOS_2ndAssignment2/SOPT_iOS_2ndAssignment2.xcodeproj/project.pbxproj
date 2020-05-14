@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		29561B30246CD58A005B04EB /* Member.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29561B2F246CD58A005B04EB /* Member.swift */; };
+		29561B32246CD6EC005B04EB /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29561B31246CD6EC005B04EB /* TableViewController.swift */; };
+		29561B34246CD744005B04EB /* MemberCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29561B33246CD744005B04EB /* MemberCell.swift */; };
 		2971A67A245B0F05006EB488 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2971A679245B0F05006EB488 /* AppDelegate.swift */; };
 		2971A67C245B0F05006EB488 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2971A67B245B0F05006EB488 /* SceneDelegate.swift */; };
 		2971A67E245B0F05006EB488 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2971A67D245B0F05006EB488 /* ViewController.swift */; };
@@ -18,6 +21,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		29561B2F246CD58A005B04EB /* Member.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Member.swift; sourceTree = "<group>"; };
+		29561B31246CD6EC005B04EB /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		29561B33246CD744005B04EB /* MemberCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberCell.swift; sourceTree = "<group>"; };
 		2971A676245B0F05006EB488 /* SOPT_iOS_2ndAssignment2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SOPT_iOS_2ndAssignment2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2971A679245B0F05006EB488 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2971A67B245B0F05006EB488 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -69,6 +75,9 @@
 				2971A687245B0F07006EB488 /* Info.plist */,
 				2971A68D245B1F24006EB488 /* SignUpViewController.swift */,
 				2971A68F245B29F4006EB488 /* ScrollViewController.swift */,
+				29561B2F246CD58A005B04EB /* Member.swift */,
+				29561B31246CD6EC005B04EB /* TableViewController.swift */,
+				29561B33246CD744005B04EB /* MemberCell.swift */,
 			);
 			path = SOPT_iOS_2ndAssignment2;
 			sourceTree = "<group>";
@@ -145,6 +154,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				2971A67E245B0F05006EB488 /* ViewController.swift in Sources */,
+				29561B32246CD6EC005B04EB /* TableViewController.swift in Sources */,
+				29561B30246CD58A005B04EB /* Member.swift in Sources */,
+				29561B34246CD744005B04EB /* MemberCell.swift in Sources */,
 				2971A67A245B0F05006EB488 /* AppDelegate.swift in Sources */,
 				2971A690245B29F4006EB488 /* ScrollViewController.swift in Sources */,
 				2971A68E245B1F24006EB488 /* SignUpViewController.swift in Sources */,
