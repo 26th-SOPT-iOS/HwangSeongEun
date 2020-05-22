@@ -10,7 +10,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SOPT_iOS_2ndAssignment2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="loginViewController" id="BYZ-38-t0r" customClass="ViewController" customModule="SOPT_iOS_2ndAssignment2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -21,7 +21,7 @@
                                     <constraint firstAttribute="height" constant="63" id="h3o-v1-oYV"/>
                                 </constraints>
                             </imageView>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="이메일" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VdR-W8-8kR">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="아이디" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VdR-W8-8kR">
                                 <rect key="frame" x="37" y="359" width="340" height="44"/>
                                 <color key="backgroundColor" red="0.92941176470588238" green="0.92941176470588238" blue="0.92941176470588238" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -85,7 +85,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="Skd-K7-sWF"/>
                     <connections>
-                        <outlet property="emailText" destination="VdR-W8-8kR" id="pcn-OX-8c5"/>
+                        <outlet property="idText" destination="VdR-W8-8kR" id="s3F-02-SGJ"/>
                         <outlet property="loginBtn" destination="PLU-RT-ehw" id="huZ-aN-jqf"/>
                         <outlet property="pwText" destination="UgS-FU-3v7" id="LGk-PO-u8z"/>
                     </connections>
@@ -470,7 +470,7 @@
                                 <color key="textColor" red="0.027450980392156862" green="0.23137254901960785" blue="0.63921568627450975" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="이름" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pjG-6z-sIC">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="아이디" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pjG-6z-sIC">
                                 <rect key="frame" x="38" y="364" width="338" height="44"/>
                                 <color key="backgroundColor" red="0.92941176470588238" green="0.92941176470588238" blue="0.92941176470588238" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
@@ -480,7 +480,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="이메일" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pb9-yl-hub">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="비밀번호" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pb9-yl-hub">
                                 <rect key="frame" x="38" y="424" width="338" height="44"/>
                                 <color key="backgroundColor" red="0.92941176469999998" green="0.92941176469999998" blue="0.92941176469999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
@@ -490,7 +490,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="비밀번호" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aaD-6Y-uzk">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="이름" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aaD-6Y-uzk">
                                 <rect key="frame" x="38" y="484" width="338" height="44"/>
                                 <color key="backgroundColor" red="0.92941176469999998" green="0.92941176469999998" blue="0.92941176469999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
@@ -500,8 +500,18 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="이메일" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2Kc-Nu-zg9">
+                                <rect key="frame" x="38" y="544" width="338" height="44"/>
+                                <color key="backgroundColor" red="0.92941176469999998" green="0.92941176469999998" blue="0.92941176469999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="t6A-Jy-0uC"/>
+                                </constraints>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xV0-zp-kCh">
-                                <rect key="frame" x="37" y="573" width="340" height="48"/>
+                                <rect key="frame" x="37" y="664" width="340" height="48"/>
                                 <color key="backgroundColor" red="0.027450980390000001" green="0.23137254900000001" blue="0.63921568627450975" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="48" id="DpH-yR-eFI"/>
@@ -514,36 +524,54 @@
                                     <action selector="transferView:" destination="eDd-Yf-2uy" eventType="touchUpInside" id="oMQ-mY-k9x"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="휴대폰번호" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="adB-gS-Pu2">
+                                <rect key="frame" x="38" y="604" width="338" height="44"/>
+                                <color key="backgroundColor" red="0.92941176469999998" green="0.92941176469999998" blue="0.92941176469999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="Yga-t4-QKR"/>
+                                </constraints>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="biJ-if-nDQ" firstAttribute="trailing" secondItem="aaD-6Y-uzk" secondAttribute="trailing" constant="38" id="13f-3A-NCl"/>
+                            <constraint firstItem="xV0-zp-kCh" firstAttribute="top" secondItem="adB-gS-Pu2" secondAttribute="bottom" constant="16" id="1UC-E4-471"/>
+                            <constraint firstItem="biJ-if-nDQ" firstAttribute="trailing" secondItem="adB-gS-Pu2" secondAttribute="trailing" constant="38" id="5N2-ZP-aW7"/>
                             <constraint firstItem="pjG-6z-sIC" firstAttribute="top" secondItem="D0M-fF-i5n" secondAttribute="bottom" constant="42" id="5eS-Ki-mHE"/>
                             <constraint firstItem="pb9-yl-hub" firstAttribute="leading" secondItem="biJ-if-nDQ" secondAttribute="leading" constant="38" id="6Q4-hE-bAH"/>
                             <constraint firstItem="52X-Ii-Hkn" firstAttribute="top" secondItem="biJ-if-nDQ" secondAttribute="top" constant="143" id="7aC-Zd-B0g"/>
+                            <constraint firstItem="biJ-if-nDQ" firstAttribute="trailing" secondItem="2Kc-Nu-zg9" secondAttribute="trailing" constant="38" id="8xf-UN-vRB"/>
                             <constraint firstItem="aaD-6Y-uzk" firstAttribute="leading" secondItem="biJ-if-nDQ" secondAttribute="leading" constant="38" id="COv-L7-YRa"/>
                             <constraint firstItem="biJ-if-nDQ" firstAttribute="trailing" secondItem="pb9-yl-hub" secondAttribute="trailing" constant="38" id="Hen-CR-k9a"/>
                             <constraint firstItem="biJ-if-nDQ" firstAttribute="trailing" secondItem="pjG-6z-sIC" secondAttribute="trailing" constant="38" id="JE4-S7-9vC"/>
+                            <constraint firstItem="adB-gS-Pu2" firstAttribute="top" secondItem="2Kc-Nu-zg9" secondAttribute="bottom" constant="16" id="Jek-wc-Y71"/>
                             <constraint firstItem="D0M-fF-i5n" firstAttribute="top" secondItem="52X-Ii-Hkn" secondAttribute="bottom" constant="10" id="PXO-03-HMp"/>
+                            <constraint firstItem="adB-gS-Pu2" firstAttribute="leading" secondItem="biJ-if-nDQ" secondAttribute="leading" constant="38" id="SBY-3k-vDa"/>
                             <constraint firstItem="biJ-if-nDQ" firstAttribute="trailing" secondItem="xV0-zp-kCh" secondAttribute="trailing" constant="37" id="T37-rg-tmc"/>
                             <constraint firstItem="xV0-zp-kCh" firstAttribute="leading" secondItem="biJ-if-nDQ" secondAttribute="leading" constant="37" id="aze-rp-t0n"/>
                             <constraint firstItem="52X-Ii-Hkn" firstAttribute="leading" secondItem="biJ-if-nDQ" secondAttribute="leading" constant="121" id="foH-nV-e6O"/>
                             <constraint firstItem="aaD-6Y-uzk" firstAttribute="top" secondItem="pb9-yl-hub" secondAttribute="bottom" constant="16" id="fqP-RD-DrQ"/>
                             <constraint firstItem="pb9-yl-hub" firstAttribute="top" secondItem="pjG-6z-sIC" secondAttribute="bottom" constant="16" id="ftX-FP-RHs"/>
                             <constraint firstItem="pjG-6z-sIC" firstAttribute="leading" secondItem="biJ-if-nDQ" secondAttribute="leading" constant="38" id="hbd-K6-7sN"/>
+                            <constraint firstItem="2Kc-Nu-zg9" firstAttribute="leading" secondItem="biJ-if-nDQ" secondAttribute="leading" constant="38" id="ioc-tR-kUH"/>
+                            <constraint firstItem="2Kc-Nu-zg9" firstAttribute="top" secondItem="aaD-6Y-uzk" secondAttribute="bottom" constant="16" id="isU-JO-j66"/>
                             <constraint firstItem="biJ-if-nDQ" firstAttribute="trailing" secondItem="D0M-fF-i5n" secondAttribute="trailing" constant="145" id="orH-vF-tWx"/>
                             <constraint firstItem="biJ-if-nDQ" firstAttribute="trailing" secondItem="52X-Ii-Hkn" secondAttribute="trailing" constant="121" id="sLa-ep-z49"/>
-                            <constraint firstItem="xV0-zp-kCh" firstAttribute="top" secondItem="aaD-6Y-uzk" secondAttribute="bottom" constant="45" id="wW5-ZE-AFE"/>
                             <constraint firstItem="D0M-fF-i5n" firstAttribute="leading" secondItem="biJ-if-nDQ" secondAttribute="leading" constant="145" id="xCc-gk-VQC"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="biJ-if-nDQ"/>
                     </view>
                     <navigationItem key="navigationItem" id="6PB-c2-EKe"/>
                     <connections>
-                        <outlet property="emailText" destination="pb9-yl-hub" id="Fng-Ir-STa"/>
-                        <outlet property="nameText" destination="pjG-6z-sIC" id="zVY-7k-v9S"/>
+                        <outlet property="emailText" destination="2Kc-Nu-zg9" id="JCg-me-Spp"/>
+                        <outlet property="idText" destination="pjG-6z-sIC" id="ksQ-UJ-IOq"/>
+                        <outlet property="nameText" destination="aaD-6Y-uzk" id="XLi-Y4-M1U"/>
                         <outlet property="okBtn" destination="xV0-zp-kCh" id="ZoT-Vt-muE"/>
-                        <outlet property="pwText" destination="aaD-6Y-uzk" id="Lit-ev-70N"/>
+                        <outlet property="phoneText" destination="adB-gS-Pu2" id="lth-s3-EbA"/>
+                        <outlet property="pwText" destination="pb9-yl-hub" id="20F-Yu-0Gc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="L43-S7-YFi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

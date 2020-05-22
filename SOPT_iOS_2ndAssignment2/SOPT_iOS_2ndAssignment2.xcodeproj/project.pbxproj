@@ -22,6 +22,7 @@
 		2996C6532471479700523BAA /* SigninData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2996C6522471479700523BAA /* SigninData.swift */; };
 		2996C655247148E000523BAA /* NetworkResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2996C654247148E000523BAA /* NetworkResult.swift */; };
 		2996C6572471497400523BAA /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2996C6562471497400523BAA /* LoginService.swift */; };
+		29F23E3824761EF50039FB6A /* SignupService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F23E3724761EF50039FB6A /* SignupService.swift */; };
 		607F11CE779F30AA9F866F12 /* Pods_SOPT_iOS_2ndAssignment2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C6CD55B2A220A7EAB12F697 /* Pods_SOPT_iOS_2ndAssignment2.framework */; };
 /* End PBXBuildFile section */
 
@@ -43,6 +44,7 @@
 		2996C6522471479700523BAA /* SigninData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninData.swift; sourceTree = "<group>"; };
 		2996C654247148E000523BAA /* NetworkResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResult.swift; sourceTree = "<group>"; };
 		2996C6562471497400523BAA /* LoginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
+		29F23E3724761EF50039FB6A /* SignupService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupService.swift; sourceTree = "<group>"; };
 		3C6CD55B2A220A7EAB12F697 /* Pods_SOPT_iOS_2ndAssignment2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SOPT_iOS_2ndAssignment2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		476A082021C58A9621926EF7 /* Pods-SOPT_iOS_2ndAssignment2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SOPT_iOS_2ndAssignment2.release.xcconfig"; path = "Target Support Files/Pods-SOPT_iOS_2ndAssignment2/Pods-SOPT_iOS_2ndAssignment2.release.xcconfig"; sourceTree = "<group>"; };
 		FEFEF61A9C547210A6B63358 /* Pods-SOPT_iOS_2ndAssignment2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SOPT_iOS_2ndAssignment2.debug.xcconfig"; path = "Target Support Files/Pods-SOPT_iOS_2ndAssignment2/Pods-SOPT_iOS_2ndAssignment2.debug.xcconfig"; sourceTree = "<group>"; };
@@ -104,6 +106,7 @@
 				2996C6502471471900523BAA /* APIConstants.swift */,
 				2996C654247148E000523BAA /* NetworkResult.swift */,
 				2996C6562471497400523BAA /* LoginService.swift */,
+				29F23E3724761EF50039FB6A /* SignupService.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -304,6 +307,7 @@
 				29561B34246CD744005B04EB /* MemberCell.swift in Sources */,
 				2971A67A245B0F05006EB488 /* AppDelegate.swift in Sources */,
 				2996C6532471479700523BAA /* SigninData.swift in Sources */,
+				29F23E3824761EF50039FB6A /* SignupService.swift in Sources */,
 				2996C6572471497400523BAA /* LoginService.swift in Sources */,
 				2996C6512471471900523BAA /* APIConstants.swift in Sources */,
 				2971A690245B29F4006EB488 /* ScrollViewController.swift in Sources */,

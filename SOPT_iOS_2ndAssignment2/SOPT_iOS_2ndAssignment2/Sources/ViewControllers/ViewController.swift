@@ -10,22 +10,26 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    @IBOutlet weak var emailText: UITextField!
+    @IBOutlet weak var idText: UITextField!
     @IBOutlet weak var pwText: UITextField!
     @IBOutlet weak var loginBtn: UIButton!
+    
+    var id: String?
+    var pwd: String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
         //둥글게 둥글게
-        emailText.layer.cornerRadius = 22
+        idText.layer.cornerRadius = 22
         pwText.layer.cornerRadius = 22
         loginBtn.layer.cornerRadius = 24
     
-    self.navigationController?.navigationBar.topItem?.title = ""
+        self.navigationController?.navigationBar.topItem?.title = ""
         
-       
+        
+        autoLogin()
         
     }
     
@@ -35,9 +39,19 @@ class ViewController: UIViewController {
 //        self.present(receiveViewController, animated: true, completion: nil)
 //    }
     
+    private func autoLogin() {
+        guard let id = self.id else {return}
+        guard let pwd = self.pwd else {return}
+        
+        idText.text = id
+        pwText.text = pwd
+        
+        loginBtn.sendActions(for: .touchUpInside)
+    }
+    
     
     @IBAction func doLogin(_ sender: Any) {
-        guard let inputID = emailText.text else {return}
+        guard let inputID = idText.text else {return}
         guard let inputPWD = pwText.text else {return}
         
         LoginService.shared.login(id: inputID, pwd: inputPWD) { networkResult in
@@ -56,7 +70,7 @@ class ViewController: UIViewController {
                 self.present(alertViewController, animated: true, completion: nil)
             case .pathErr: print("path")
             case .serverErr: print("serverErr")
-            case .networkFail: print("networkFial")
+            case .networkFail: print("networkFail")
             }
         }
     }
