@@ -1,0 +1,6 @@
+framework module Pods_SOPT_CoupangEats {
+  umbrella header "Pods-SOPT-CoupangEats-umbrella.h"
+
+  export *
+  module * { export * }
+}
