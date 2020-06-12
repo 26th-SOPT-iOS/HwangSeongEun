@@ -13,7 +13,7 @@ struct SignUpService{
     static let shared = SignUpService()
     
     private func makeParameter(_ id: String, _ pwd: String, _ name: String, _ email: String, _ phone: String) -> Parameters {
-        return ["id": id, "password": pwd, "name": name, "email": email, "phone": phone]
+        return ["id" : id, "pwd" : pwd, "name" : name, "email" : email, "phone" : phone]
     }
     
     func signUp(id: String, pwd: String, name: String, email: String, phone: String, completion: @escaping (NetworkResult<Any>) -> Void) {

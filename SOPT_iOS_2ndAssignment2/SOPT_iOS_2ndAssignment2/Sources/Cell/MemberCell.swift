@@ -11,7 +11,7 @@ import UIKit
 class MemberCell: UITableViewCell {
     static let identifier: String = "MemberCell"
 
-    @IBOutlet weak var profileImageView: UIImageView!
+    @IBOutlet weak var profileButton: UIButton!
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var msgLabel: UILabel!
     
@@ -28,9 +28,12 @@ class MemberCell: UITableViewCell {
     }
     
     func setMemberInformation(_ memberInfomation: Member) {
-        profileImageView.image = memberInfomation.profileImg
+        profileButton.setImage(memberInfomation.profileImg, for: .normal)
         nameLabel.text = memberInfomation.name
         msgLabel.text = memberInfomation.message
     }
 
+    @IBAction func clickProfileImg(_ sender: Any) {
+        print("click")
+    }
 }

@@ -11,6 +11,7 @@ import UIKit
 class TableViewController: UIViewController {
 
     @IBOutlet weak var memTableView: UITableView!
+    @IBOutlet weak var profileBtn: UIButton!
     
     private var memberList:[Member] = []
     
@@ -56,7 +57,10 @@ class TableViewController: UIViewController {
         present(optionAlert, animated: true, completion: nil)
     }
     
-
+    @IBAction func clickProfileBtn(_ sender: Any) {
+        print("앙")
+    }
+    
 }
 
 extension TableViewController: UITableViewDataSource {
